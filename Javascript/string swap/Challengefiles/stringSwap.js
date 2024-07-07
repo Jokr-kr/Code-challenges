@@ -40,10 +40,10 @@ document.addEventListener('DOMContentLoaded', () =>
         stringPairs.forEach(pair =>
         {
             const [s1, s2, expectedResult] = pair;
-            const canBeEqual = checkIfEqualWithOneSwap(s1, s2);
+            const canBeEqual = challengeAnswer(s1, s2);
 
             // Log each pair and result for debugging
-            console.log(`Checking pair: "${s1}" and "${s2}", expected: ${expectedResult}, got: ${canBeEqual}`);
+            // console.log(`Checking pair: "${s1}" and "${s2}", expected: ${expectedResult}, got: ${canBeEqual}`);
 
             // Create a result paragraph
             const resultParagraph = document.createElement('p');
